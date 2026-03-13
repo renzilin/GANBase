@@ -50,7 +50,21 @@ pip install -r requirements.txt
 conda env create -f environment.yml -n GANBase_env
 ``` -->
 
+If you want run the read until adaptive sequencing pipeine, please install read_until_api and bonito
 
+```
+cd read_until_api-3.0.0/
+pip install numpy==1.22.4 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install minknow-api==4.0.4 -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+python setup.py install
+cd bonito
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -e .
+
+pip install scikit-learn scipy grpcio
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
 
 ## Usage
@@ -193,7 +207,7 @@ python script/prediction.py --model_path 'model/model_dis.pt' --data_path "data/
 We use 'read_until.py' to the real-world test. By its read_until_api, we use human_model to deplete human sequence as much as possible. 
 
 ```bash
-python script/read_until.py
+python script/read_until/read_until.py
 ``` 
 
 
