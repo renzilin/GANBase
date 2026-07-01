@@ -260,4 +260,23 @@ CUDA_VISIBLE_DEVICES=0 python script/train.py --project_path your_project_dir --
 
 
 
+## Reference
+
+```text
+Zhang, Y., Sun, P., Zhang, J. et al. Genome-guided generative adversarial learning enables nanopore adaptive sequencing. Nat Commun (2026). [https://doi.org/10.1038/s41467-026-73785-8](https://doi.org/10.1038/s41467-026-73785-8)
+```
+
+```bash
+
+@article{zhang2026genome,
+  title     = {Genome-guided generative adversarial learning enables nanopore adaptive sequencing},
+  author    = {Zhang, Yixiang and Sun, Pingping and Zhang, Jiarong and Fu, Zhiguo and Bo, Xiaochen and Guan, Di and Ni, Ming and Ren, Zilin},
+  journal   = {Nature Communications},
+  year      = {2026},
+  month     = {Jun},
+  day       = {02},
+  doi       = {10.1038/s41467-026-73785-8},
+  url       = {[https://doi.org/10.1038/s41467-026-73785-8](https://doi.org/10.1038/s41467-026-73785-8)}
+}
+```
 
